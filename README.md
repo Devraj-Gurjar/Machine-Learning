@@ -1,126 +1,116 @@
-# 🤖 Machine Learning From Scratch
+# 🤖 Complete Machine Learning
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white" alt="Jupyter">
-  <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Status">
-  <img src="https://img.shields.io/badge/PRs-Welcome-blueviolet" alt="PRs Welcome">
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
-</p>
+> A structured, hands-on implementation of every major Machine Learning algorithm — from mathematical foundations to production-ready code.
+> Built while completing **CampusX DSMP 1.0 + 2.0** alongside **IIT Madras BS in Data Science and Applications**.
 
-<p align="center">
-  A growing collection of <b>Machine Learning algorithms implemented from scratch in Python</b> —
-  covering regression, classification, dimensionality reduction, model evaluation, and more.
-  <br>
-  Built step-by-step while learning, with a focus on <b>intuition + math + code</b>.
-</p>
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat&logo=python)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3+-orange?style=flat&logo=scikit-learn)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?style=flat&logo=jupyter)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
 ---
 
-## 📌 About This Repo
+## 📁 Repository Structure
 
-This repository documents my hands-on Machine Learning journey — every folder represents
-a concept I studied and then implemented myself (not just using `sklearn` blindly, but
-understanding what's happening under the hood).
-
-Each module typically includes:
-- 📓 A Jupyter Notebook with step-by-step implementation
-- 🧮 Mathematical intuition behind the algorithm
-- 📊 Visualizations to build geometric/graphical understanding
-- 🧪 Experiments comparing scratch implementation vs. library implementation (where applicable)
-
-> 🔄 **This repo is a work in progress** — new algorithms are added regularly as I keep learning.
-
----
-
-## 🗂️ Repository Structure
-
-| # | Folder | Topic |
-|---|--------|-------|
-| 23 | [`23_linear_regression`](./23_linear_regression) | Linear Regression |
-| 24 | [`24_Gradient_descent`](./24_Gradient_descent) | Gradient Descent (Batch / Stochastic / Mini-batch) |
-| 25 | [`25_Regression_analysis`](./25_Regression_analysis) | Regression Analysis |
-| 26 | [`26_Feature_Selection`](./26_Feature_Selection) | Feature Selection Techniques |
-| 27 | [`27_Regularization`](./27_Regularization) | Regularization (Ridge / Lasso / ElasticNet) |
-| 28 | [`28_K_Nearest_Neighors`](./28_K_Nearest_Neighors) | K-Nearest Neighbors (KNN) |
-| 29 | [`29_PCA`](./29_PCA) | Principal Component Analysis (PCA) |
-| 30 | [`30_Model_Evaluation_Selection`](./30_Model_Evaluation_Selection) | Model Evaluation & Selection |
-
-> 📁 Folders are numbered in the order topics were studied — new folders will keep getting
-> appended as the learning progresses (classification, clustering, ensemble methods, deep
-> learning basics, etc.)
+| # | Folder | Topics Covered |
+|---|--------|----------------|
+| 01 | [`23_Linear_Regression`](./23_Linear_Rigression/) | Simple & Multiple Linear Regression, OLS, MSE, R² — implemented from scratch |
+| 02 | [`24_Gradient_Descent`](./24_Gradient_Descent/) | Batch GD, Stochastic GD, Mini-batch GD — coded from scratch with visualization |
+| 03 | [`25_Regression_Analysis`](./25_Regression_analysis/) | Regression assumptions, F-statistic, multicollinearity, VIF, statsmodels |
+| 04 | [`26_Feature_Selection`](./26_Feature_selection/) | Filter methods, Wrapper methods (RFE, SFS), Embedded methods (LASSO, Tree-based) |
+| 05 | [`27_Regularization`](./27_Regularization/) | Ridge, Lasso, ElasticNet — geometric intuition + from-scratch implementation |
+| 06 | [`28_KNN`](./28_KNN/) | K-Nearest Neighbors for classification + regression, KD-Tree, weighted KNN |
+| 07 | [`29_PCA`](./29_PCA/) | Principal Component Analysis — Eigendecomposition, SVD, explained variance |
+| 08 | [`30_Model_Evaluation`](./30_Model%20Evaluation%20%26%20Selection/) | Cross-validation, ROC-AUC, Precision-Recall, GridSearchCV, RandomizedSearchCV |
+| 09 | [`31_Naive_Bayes`](./31_Naive_bayes/) | Gaussian, Multinomial, Bernoulli NB — Laplace smoothing, log probabilities |
+| 10 | [`32_Logistic_Regression`](./32_Logistic_Regression/) | Binary + Multiclass (OvR, Softmax), MLE, Log-loss, regularization |
+| 11 | [`33_SVM`](./33_SVM/) | Hard + Soft Margin SVM, Kernel trick (RBF, Polynomial), Dual problem |
+| 12 | [`34_Decision_Tree`](./34_Decision_Tree/) | CART algorithm, Gini impurity, pruning, feature importance, visualization |
+| 13 | [`35_Random_Forest`](./35_Random_forest/) | Bagging, Random Forest, OOB score, feature importance, hyperparameter tuning |
+| 14 | [`36_Gradient_Boosting`](./36_Gradient%20Boosting/) | Gradient Boosting — function space intuition, pseudo-residuals, math formulation |
+| 15 | [`XgBoost`](./XgBoost/) | XGBoost for regression + classification — Taylor series loss, similarity score |
+| 16 | [`LightGBM_and_CatBoost`](./LightGBM%20and%20Catboost/) | LightGBM (leaf-wise), CatBoost (categorical handling) — comparison with XGBoost |
+| 17 | [`K-Means-Clustering`](./K-Means-clustering/) | KMeans++, Elbow method, Silhouette score, Mini-batch KMeans |
+| 18 | [`Unsupervised_Learning`](./Unsupervised%20Learning/) | DBSCAN, Hierarchical Clustering, GMM, t-SNE |
 
 ---
 
-## 🚀 Getting Started
+## 🧠 Concepts Covered
 
-### 1. Clone the repository
-```bash
+**Supervised Learning**
+- Linear Models: Linear Regression, Logistic Regression, Ridge, Lasso, ElasticNet
+- Tree Models: Decision Trees, Random Forest, Gradient Boosting, XGBoost, LightGBM, CatBoost
+- Instance-based: KNN (classification + regression)
+- Kernel Methods: SVM (Hard/Soft margin, RBF, Polynomial kernel)
+- Probabilistic: Naive Bayes (Gaussian, Multinomial, Bernoulli)
+
+**Unsupervised Learning**
+- Clustering: KMeans, DBSCAN, Hierarchical (Single, Complete, Ward), GMM
+- Dimensionality Reduction: PCA (Eigendecomposition + SVD), t-SNE
+
+**ML Engineering**
+- Optimization: Batch GD, SGD, Mini-batch GD (from scratch)
+- Feature Engineering: Feature selection (Filter, Wrapper, Embedded), missing value imputation
+- Regularization: L1 (Lasso), L2 (Ridge), ElasticNet — geometric intuition
+- Model Evaluation: Cross-validation, ROC-AUC, Precision-Recall, F1, Confusion Matrix
+- Hyperparameter Tuning: GridSearchCV, RandomizedSearchCV, Optuna
+
+---
+
+## 🔧 Tech Stack
+
+Python 3.10+ — Core language
+NumPy — Numerical computing, from-scratch implementations
+Pandas — Data manipulation and preprocessing
+Scikit-learn — ML algorithms, pipelines, evaluation
+XGBoost — Gradient boosting framework
+LightGBM — Fast gradient boosting
+CatBoost — Categorical feature boosting
+Optuna — Hyperparameter optimization
+Matplotlib — Visualizations
+Seaborn — Statistical visualizations
+Jupyter — Interactive notebooks
+
+---
+
+## 🚀 How to Run
+
 git clone https://github.com/Devraj-Gurjar/Machine-Learning.git
 cd Machine-Learning
-```
-
-### 2. Set up environment
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run any notebook
-```bash
+pip install numpy pandas scikit-learn xgboost lightgbm catboost optuna matplotlib seaborn jupyter
 jupyter notebook
-```
-Navigate to the folder of the topic you want to explore and open the `.ipynb` file.
+
+Then navigate to any folder and open the `.ipynb` file.
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 Key Highlights
 
-<p align="left">
-  <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square" alt="Python">
-  <img src="https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white&style=flat-square" alt="NumPy">
-  <img src="https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white&style=flat-square" alt="Pandas">
-  <img src="https://img.shields.io/badge/-Matplotlib-11557c?style=flat-square" alt="Matplotlib">
-  <img src="https://img.shields.io/badge/-Scikit--Learn-F7931E?logo=scikit-learn&logoColor=white&style=flat-square" alt="Scikit-learn">
-  <img src="https://img.shields.io/badge/-Jupyter-F37626?logo=jupyter&logoColor=white&style=flat-square" alt="Jupyter">
-</p>
+- **From-scratch implementations** — Linear Regression, Gradient Descent, Backpropagation, PCA, KNN all implemented using only NumPy before using Sklearn
+- **Math-first approach** — Every algorithm includes mathematical formulation before code
+- **Bias-Variance Tradeoff** — Demonstrated practically across multiple algorithms
+- **Complete Boosting stack** — Gradient Boosting → XGBoost → LightGBM → CatBoost with comparison
+- **Full unsupervised suite** — KMeans, DBSCAN, Hierarchical, GMM, t-SNE in one place
 
 ---
 
-## 🎯 Goal of This Repository
+## 🎯 Learning Source
 
-- Build strong **mathematical + intuitive** understanding of core ML algorithms
-- Practice implementing algorithms **from scratch** before relying on libraries
-- Maintain a personal reference/cheat-sheet of ML concepts for revision
-- Track progress as part of my journey toward becoming a **Data Scientist / AI Engineer**
+- **IIT Madras BS in Data Science** — Machine Learning Foundations (MLF) + Machine Learning Techniques (MLT) + Machine Learning Practice(MLP) course
 
 ---
 
-## 📈 Roadmap / Upcoming Additions
+## 👤 Author
 
-- [ ] Logistic Regression
-- [ ] Decision Trees
-- [ ] Ensemble Methods (Bagging, Random Forest, Boosting)
-- [ ] Clustering (K-Means, Hierarchical, DBSCAN)
-- [ ] Support Vector Machines
-- [ ] Naive Bayes
-- [ ] Deep Learning Basics
+**Devraj Patel**
+IIT Madras — BS in Data Science and Applications
+
+[![GitHub](https://img.shields.io/badge/GitHub-Devraj--Gurjar-black?style=flat&logo=github)](https://github.com/Devraj-Gurjar)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-devraj--patel-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/devraj-patel-9257013a0/)
 
 ---
 
-## 🤝 Contributing
+## 📄 License
 
-This is primarily a personal learning repo, but suggestions, corrections, and improvements
-are always welcome! Feel free to open an issue or a pull request.
-
----
-
-## 📬 Connect
-
-**Devraj Gurjar**
-GitHub: [@Devraj-Gurjar](https://github.com/Devraj-Gurjar)
-
----
-
-<p align="center">
-  ⭐ If you find this repo helpful for your own ML learning journey, consider giving it a star!
-</p>
+MIT License — feel free to use, modify, and share.
